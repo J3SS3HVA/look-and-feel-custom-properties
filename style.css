@@ -1,22 +1,22 @@
 :root{
 
-    --primaryColor: white;
+    --primaryBackgroundColor: white; /*standard background body*/
 
-    --secondaryColor: black;
+    --primaryTextColor: black; /*standard text color */
 
-    --themeColor1: linear-gradient(45deg, rgb(251, 63, 63) 0%, rgb(140, 70, 252) 100%); 
+    --themeColor1: linear-gradient(45deg, rgb(251, 63, 63) 0%, rgb(140, 70, 252) 100%); /*background color style*/
 
-    --themeColor2: linear-gradient(90deg, rgb(251, 63, 63) 0%, rgb(188, 252, 70) 100%);
+    --themeColor2: linear-gradient(90deg, rgb(251, 63, 63) 0%, rgb(188, 252, 70) 100%); /*2nd background style*/
 
-    --ChapterFont1: montserrat, sans-serif;
+    --ChapterFont1: montserrat, sans-serif; /*font for h1's*/
 
-    --storyFont2: Papyrus, fantasy;
+    --storyFont2: Papyrus, fantasy; /* font for boxes with text
 
     /*darktheme colors*/
-    
-    --primaryDarkColor: rgb(0, 0, 0); 
 
-    --secondaryDarkColor: white;
+    --primaryDarkBackgroundColor: rgb(0, 0, 0); /* dark theme background*/
+
+    --secondaryDarkTextColor: white; /*darktheme text color*/
 
 }
 
@@ -27,19 +27,19 @@
 }
 
 body{
-    background-color: var(--primaryColor);
+    background-color: var(--primaryBackgroundColor);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 h1{
-    color: var(--secondaryColor);
+    color: var(--primaryTextColor);
     font-family: var(--ChapterFont1);
     text-transform: uppercase;
 }
 
 h2, p{
-    color: var(--secondaryColor);
+    color: var(--primaryTextColor);
     font-family: var(--storyFont2);
 }
 
@@ -61,20 +61,20 @@ h2, p{
 }
 
 .darkmode {
-    background-color: var(--primaryDarkColor);
+    background-color: var(--primaryDarkBackgroundColor);
   
 }
 /* darkmode */
 .darkmode h1{
-    color: var(--secondaryDarkColor);   
+    color: var(--secondaryDarkTextColor);   
 }
 
 .darkmode h2{
-    color: var(--secondaryDarkColor);   
+    color: var(--secondaryDarkTextColor);   
 }
 
 .darkmode p{
-    color: var(--secondaryDarkColor);  
+    color: var(--secondaryDarkTextColor);  
 }
 
 /* color swap depends on window size */
