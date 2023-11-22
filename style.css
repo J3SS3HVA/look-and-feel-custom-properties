@@ -12,6 +12,8 @@
 
     --storyFont2: Papyrus, fantasy;
 
+    /*darktheme colors*/
+    
     --primaryDarkColor: rgb(0, 0, 0); 
 
     --secondaryDarkColor: white;
@@ -62,7 +64,7 @@ h2, p{
     background-color: var(--primaryDarkColor);
   
 }
-
+/* darkmode */
 .darkmode h1{
     color: var(--secondaryDarkColor);   
 }
@@ -74,6 +76,8 @@ h2, p{
 .darkmode p{
     color: var(--secondaryDarkColor);  
 }
+
+/* color swap depends on window size */
 @media (max-width: 1500px) {
     .inferno{
         background-image: var(--themeColor1);
