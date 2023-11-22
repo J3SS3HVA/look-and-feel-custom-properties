@@ -1,0 +1,84 @@
+:root{
+
+    --primaryColor: white;
+
+    --secondaryColor: black;
+
+    --themeColor1: linear-gradient(45deg, rgb(251, 63, 63) 0%, rgb(140, 70, 252) 100%); 
+
+    --themeColor2: linear-gradient(90deg, rgb(251, 63, 63) 0%, rgb(188, 252, 70) 100%);
+
+    --ChapterFont1: montserrat, sans-serif;
+
+    --storyFont2: Papyrus, fantasy;
+
+    --primaryDarkColor: rgb(0, 0, 0); 
+
+    --secondaryDarkColor: white;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: var(--secondaryColor);
+    font-family: var(--ChapterFont1);
+    text-transform: uppercase;
+}
+
+h2, p{
+    color: var(--secondaryColor);
+    font-family: var(--storyFont2);
+}
+
+
+.info{
+    width: 30%;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.galaxy{
+    background-image: var(--themeColor1);
+}
+
+.inferno{
+    background-image: var(--themeColor2);
+}
+
+.darkmode {
+    background-color: var(--primaryDarkColor);
+  
+}
+
+.darkmode h1{
+    color: var(--secondaryDarkColor);   
+}
+
+.darkmode h2{
+    color: var(--secondaryDarkColor);   
+}
+
+.darkmode p{
+    color: var(--secondaryDarkColor);  
+}
+@media (max-width: 1500px) {
+    .inferno{
+        background-image: var(--themeColor1);
+    }
+    .galaxy{
+        background-image: var(--themeColor2);
+    }
+}
